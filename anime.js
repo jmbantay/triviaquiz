@@ -12,7 +12,7 @@ db.questions.insertMany([
     type: "Text answer",
     difficulty: "Easy",
     category: "Anime",
-    answer: "Ramen"
+    answer: "ramen"
   },
   {
     question: "The Devil's Fruit that gave Luffy his powers is called the Flame-Flame Fruit.",
@@ -81,7 +81,7 @@ db.questions.insertMany([
     answer: "False"
   },{
     question: "In the anime Your Lie in April, what day was Kousei's piano competition which was also the day Kaori passed away?",
-    type: "Multiple Choice",
+    type: "Multiple choice",
     difficulty: "Hard",
     category: "Anime",
     answer: "February 18",
@@ -110,7 +110,7 @@ db.questions.insertMany([
   },
    {
     question: "In Ben 10 Alien Force, which was the first alien that Ben was able to transform into?",
-    type: "Text Answer",
+    type: "Text answer",
     difficulty: "Easy",
     category: "TV Series",
     answer: "Swampfire"
@@ -124,7 +124,7 @@ db.questions.insertMany([
   },
    {
     question: "In The Flash Season 3, what is the true identity of Savitar?",
-    type: "Multiple Choice",
+    type: "Multiple choice",
     difficulty: "Hard",
     category: "TV Series",
     answer: "Barry Allen",
@@ -132,7 +132,7 @@ db.questions.insertMany([
   },
    {
     question: "In Adventure Time, what is the animal that can be seen somewhere in every episode?",
-    type: "Text Answer",
+    type: "Text answer",
     difficulty: "Medium",
     category: "TV Series",
     answer: "snail"
