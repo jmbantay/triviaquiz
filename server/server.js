@@ -54,6 +54,17 @@ app.get('/find-questions', (request,response) =>{
 
 });
 
+app.get('/find-difficulty', (request,response) =>{
+	Question.find({difficulty: request.query.a}, (err,question)=>{ //findOne returns one item, not an array
+		if(question && !err) {
+			response.send(question);	//query is from url
+		}else{
+			response.send('Not found');
+		}
+	});
+
+});
+
 /*
 app.get('/find-questions', (request,response) =>{
 	Question.findOne({category: request.query.category}, (err,question)=>{ //findOne returns one item, not an array
