@@ -1,4 +1,4 @@
-db.questions.insertMany([
+db.question.insertMany([
 	{
 		question: "BB-8 is an astromech droid from what film?",
 		type: "Multiple choice",
@@ -22,7 +22,8 @@ db.questions.insertMany([
 		difficulty: "Easy",
 		category: "Movies",
 		answer: "Julia Roberts",
-		choices: ["Whitney Houston", "Hogwarts" "Sandra Bullock", "Meryl Streep"]
+		choices: ["Whitney Houston", "Julie Andrews", "Sandra Bullock", "Meryl Streep"]
+
 	},
 	{
 		question: "What school does Harry Potter attend?",
