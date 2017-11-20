@@ -1,4 +1,4 @@
-db.question.insertMany([
+db.questions.insertMany([
 	{
 		question: "BB-8 is an astromech droid from what film?",
 		type: "Multiple choice",
