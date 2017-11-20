@@ -4,7 +4,7 @@ db.questions.insertMany([
 		type: "Multiple choice",
 		difficulty: "Easy",
 		category: "Movies",
-		Answer: "Star Wars",
+		answer: "Star Wars",
 		choices: ["Star Wars","Lord of the Rings", "Harry Potter", "Interstellar"]
 	},
 
@@ -13,7 +13,7 @@ db.questions.insertMany([
 		type: "Multiple choice",
 		difficulty: "Easy",
 		category: "Movies",
-		Answer: "Ellen DeGeneres",
+		answer: "Ellen DeGeneres",
 		choices: ["Beyonce", "Oprah", "Jennifer Lawrence", "Ellen DeGeneres"]
 	},
 	{
@@ -21,7 +21,7 @@ db.questions.insertMany([
 		type: "Multiple choice",
 		difficulty: "Easy",
 		category: "Movies",
-		Answer: "Julia Roberts",
+		answer: "Julia Roberts",
 		choices: ["Whitney Houston", "Hogwarts" "Sandra Bullock", "Meryl Streep"]
 	},
 	{
@@ -29,7 +29,7 @@ db.questions.insertMany([
 		type: "Multiple choice",
 		difficulty: "Easy",
 		category: "Movies",
-		Answer: "Hogwarts",
+		answer: "Hogwarts",
 		choices: ["Ministry of Magic", "Hogwarts", "Middle Earth", "Azkaban"]
 	},
 	{
@@ -37,7 +37,7 @@ db.questions.insertMany([
 		type: "Multiple choice",
 		difficulty: "Easy",
 		category: "Movies",
-		Answer: "Hogwarts",
+		answer: "Hogwarts",
 		choices: ["Ministry of Magic", "Hogwarts", "Middle Earth", "Azkaban"]
 	},
 	{
@@ -45,7 +45,7 @@ db.questions.insertMany([
 		type: "Multiple choice",
 		difficulty: "Easy",
 		category: "Movies",
-		Answer: "Chucky",
+		answer: "Chucky",
 		choices: ["Chucky", "Annabelle", "Leatherface", "Ghostface"]
 	},
 
@@ -58,7 +58,7 @@ db.questions.insertMany([
 		type: "Text Answer",
 		difficulty: "Medium",
 		category: "Movies",
-		Answer: "Mufasa"
+		answer: "Mufasa"
 	},
 
 	{
@@ -66,7 +66,7 @@ db.questions.insertMany([
 		type: "Multiple choice",
 		difficulty: "Medium",
 		category: "Movies",
-		Answer: "2001",
+		answer: "2001",
 		choices: ["2000", "2001", "2002", "2003"]
 	},
 	{
@@ -74,14 +74,14 @@ db.questions.insertMany([
 		type: "Text Answer",
 		difficulty: "Medium",
 		category: "Movies",
-		Answer: "The Hulk"
-	}
+		answer: "The Hulk"
+	},
 	{
 		question: "Which actor played Marty McFly in the 1980s sci-fi classic 'Back to the Future'?",
 		type: "Multiple choice",
 		difficulty: "Medium",
 		category: "Movies",
-		Answer: "Hogwarts",
+		answer: "Hogwarts",
 		choices: ["Matt Damon", "George Clooney", "Michael J. Fox", "Daniel Day Lewis"]
 	},
 	{
@@ -89,7 +89,7 @@ db.questions.insertMany([
 		type: "Multiple choice",
 		difficulty: "Medium",
 		category: "Movies",
-		Answer: "Wednesday",
+		answer: "Wednesday",
 		choices: ["Monday", "Thursdays", "Friday", "Wednesday"]
 	},
 	{
@@ -97,19 +97,14 @@ db.questions.insertMany([
 		type: "Text Answer",
 		difficulty: "Medium",
 		category: "Movies",
-		Answer: "Amy Poehler"
+		answer: "Amy Poehler"
 	},
-
-
-
-
-
-{
+	{
 		question: "Which English actor played Itzhak Stern in the 1993 film Schindler's List?",
 		type: "Text Answer",
 		difficulty: "Hard",
 		category: "Movies",
-		Answer: "Ben Kingsley"
+		answer: "Ben Kingsley"
 	},
 
 	{
@@ -117,35 +112,35 @@ db.questions.insertMany([
 		type: "Text Answer",
 		difficulty: "Hard",
 		category: "Movies",
-		Answer: "Tales"
+		answer: "Tales"
 	},
 	{
 		question: "What is the name of the 2015 film about a frontiersman on a fur trading expedition in the 1820s and his fight for survival after being mauled by a bear?",
 		type: "Text Answer",
 		difficulty: "Hard",
 		category: "Movies",
-		Answer: "The Revenant"
-	}
+		answer: "The Revenant"
+	},
 	{
 		question: "Canadian actress who starred in The Notebook, and The Vow, and more recently as Ani Bezzerides in the TV series True Detective?",
 		type: "Text Answer",
 		difficulty: "Hard",
 		category: "Movies",
-		Answer: "Rachel McAdams"
+		answer: "Rachel McAdams"
 	},
 	{
 		question: "Released in 1999 and stars Keanu Reeves as a computer hacker.",
 		type: "Text Answer",
 		difficulty: "Hard",
 		category: "Movies",
-		Answer: "The Matrix"
+		answer: "The Matrix"
 	},
 	{
 		question: "Who is being portrayed by actor Benedict Cumberbatch in the movie 'The Imitation Game'?",
 		type: "Text Answer",
 		difficulty: "Hard",
 		category: "Movies",
-		Answer: "Alan Turing"
+		answer: "Alan Turing"
 	}
 
 ])
