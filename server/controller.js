@@ -4,6 +4,7 @@ mongoose.connect('mongodb://localhost/trivia', () =>{
 
 const  QuestionSchema = new mongoose.Schema({
 	// contains fields (columns/attributes)
+	question_num: {type: Number, default:0},
 	question: {type: String, default:''},
 	type: {type: String, default:''},
 	difficulty: {type: String, default:''},
