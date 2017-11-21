@@ -5,4 +5,5 @@ module.exports = (app) => {
 	app.get('/find-all', controller.findAll);
 	app.get('/find-difficulty', controller.findDiff);
 	app.get('/find-questions', controller.findCateg);
+	app.get('/find-questions', controller.findNum);
 }

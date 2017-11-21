@@ -45,6 +45,17 @@ exports.findCateg = (request,response) =>{
 
 }
 
+exports.findNum = (request,response) =>{
+	Question.find({category: { $in: request.query.c1}}, (err,question)=>{ //findOne returns one item, not an array
+		if(question && !err) {
+			response.send(question);	//query is from url
+		}else{
+			response.send('Not found');
+		}
+	});
+
+}
+
 exports.findDiff = (request,response) =>{
 	Question.find({difficulty: request.query.a}, (err,question)=>{ //findOne returns one item, not an array
 		if(question && !err) {
