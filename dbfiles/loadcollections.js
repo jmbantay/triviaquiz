@@ -1,3 +1,5 @@
 load("movieQuestions.js")
 load("anime.js")
 load("videogame.js")
+load("categories.js")
+load("difficulty.js")
