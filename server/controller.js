@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/trivia', () =>{
 	console.log('Connected')});
 
@@ -12,11 +13,28 @@ const  QuestionSchema = new mongoose.Schema({
 	choices: [{type: String, default: ''}]
 });
 
+const  ScoreSchema = new mongoose.Schema({
+	// contains fields (columns/attributes)
+	name: {type: String, default:''},
+	score: {type: Number, default:0},
+	categories: {type: Array, default: []}
+});
+
+const  CategorySchema = new mongoose.Schema({
+	// contains fields (columns/attributes)
+	name: {type: String, default:''}
+},
+{ versionKey: false });
+
 //register the model
 mongoose.model('Question', QuestionSchema);
+mongoose.model('Score', ScoreSchema);
+mongoose.model('Category', CategorySchema);
 
 //fetch mongoose model
 const Question = mongoose.model('Question');
+const Score = mongoose.model('Score');
+const Category = mongoose.model('Category');
 
 //actual controllers
 
@@ -53,5 +71,66 @@ exports.findDiff = (request,response) =>{
 			response.send('Not found');
 		}
 	});
+}
 
+exports.addQuestion = (request, response) => {
+  //const newQuestion = new Question(request.body);
+
+  const newQuestion = new Question({
+  	question: request.body.question,
+	type: request.body.type,
+	difficulty: request.body.difficulty,
+	category: request.body.category,
+	answer: request.body.answer,
+	choices: JSON.parse(request.body.choices)
+  });
+
+  newQuestion.save((err, question) => {
+    if (err) { response.send('Error saving question'); }
+	else { response.send('Successfully saved question'); }
+  });
+}
+
+exports.findScores = (request,response) =>{
+	Score.find((err, scores) =>{
+		if(!err) {
+			response.send(scores);
+		}
+	});
+}
+
+exports.addScore = (request, response) => {
+
+  const newScore = new Score({
+  	name: request.body.name,
+	score: request.body.score,
+	categories: JSON.parse(request.body.categories)
+  });
+
+  newScore.save((err, score) => {
+    if (err) { response.send('Error saving score'); }
+	else { response.send('Successfully added score'); }
+  });
+}
+
+exports.findAllCateg = (request,response) =>{
+	Category.find((err, categories) =>{
+		if(!err) {
+			response.send(categories);
+		}
+	});
+
+}
+
+exports.addCategory = (request,response) => {
+	const newCateg = new Category(request.body);
+	const name = request.body.name;
+
+	newCateg.save((err) => {
+		if (err) {
+			response.send('Error saving category');
+		} else{
+			response.send('Successfully saved '+name)
+		}
+	})
 }

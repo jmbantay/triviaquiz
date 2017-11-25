@@ -1,5 +1,6 @@
 db.questions.insertMany([
-	{//1
+	{//38
+		question_num: 38,
 		question:"The DOTA 2 tournament called The International contains the highest prize pool in an Esports tournament",
 		type:"True or False",
 		difficulty:"Easy",
@@ -7,7 +8,8 @@ db.questions.insertMany([
 		answer: "True",
 		choices: ["True","False"]
 	},
-	{//2
+	{//39
+		question_num: 39,
 		question:"Satoshi Tajiri, the game designer who made Pokemon in from Japan",
 		type:"True or False",
 		difficulty:"Easy",
@@ -15,7 +17,8 @@ db.questions.insertMany([
 		answer: "True",
 		choices: ["True","False"]
 	},
-	{//3
+	{//40
+		question_num: 40,
 		question:"The first Super Mario Bros. game was released in 1984",
 		type:"True or False",
 		difficulty:"Hard",
@@ -23,7 +26,8 @@ db.questions.insertMany([
 		answer: "False",
 		choices: ["True","False"]
 	},
-	{//4
+	{//41
+		question_num: 41,
 		question:"The name of Mario's brother is Steve",
 		type:"True or False",
 		difficulty:"Easy",
@@ -32,6 +36,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//5
+		question_num: 42,
 		question:"Minecraft is the best selling PC game of all time",
 		type:"True or False",
 		difficulty:"hard",
@@ -40,6 +45,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//6
+		question_num: 43,
 		question:"Temple Run is the top grossing game for the Iphone",
 		type:"True or False",
 		difficulty:"Medium",
@@ -48,6 +54,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//7
+		question_num: 44,
 		question:"Shogun: Total War, the first game in the franchise of the Total War Series was released in 2000",
 		type:"True or False",
 		difficulty:"Hard",
@@ -56,6 +63,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//8
+		question_num: 45,
 		question:"Pokemon is the best selling game franchise in the video game field",
 		type:"True or False",
 		difficulty:"Medium",
@@ -64,6 +72,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//9
+		question_num: 46,
 		question:"Evil Geniuses won the recently concluded The International 7 tournament",
 		type:"True or False",
 		difficulty:"Easy",
@@ -72,6 +81,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//10
+		question_num: 47,
 		question:"Counter Strike: Global Offensive was released in 2012",
 		type:"True or False",
 		difficulty:"Easy",
@@ -80,6 +90,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//11
+		question_num: 48,
 		question:"Pokemon Rad and Green were released in 1995",
 		type:"True or False",
 		difficulty:"Hard",
@@ -88,6 +99,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//12
+		question_num: 49,
 		question:"The nickname of teenage Filipino DOTA 2 star Abed L. Yusop is Abed",
 		type:"True or False",
 		difficulty:"Hard",
@@ -96,6 +108,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//13
+		question_num: 50,
 		question:"23 million was the prize pool of the The International 7 tournament",
 		type:"True or False",
 		difficulty:"Easy",
@@ -104,6 +117,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//14
+		question_num: 51,
 		question:"The meaning of the rising game PUBG is Player's Unknown Battlegrounds",
 		type:"True or False",
 		difficulty:"Easy",
@@ -112,6 +126,7 @@ db.questions.insertMany([
 		choices: ["True","False"]
 	},
 	{//15
+		question_num: 52,
 		question:"Computer Space was the name of the very first video game ever released?",
 		type:"True or False",
 		difficulty:"Hard",
